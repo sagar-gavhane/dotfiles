@@ -1,22 +1,14 @@
 # dotfiles
 
-My preferences may help you.
+My preferences may help you. Which settings I use in a daily workflow.
 
-## Getting Started
+## How can I access settings?
 
-Clone repository to your local machine or directly check my preferences.
+I have organized corresponding files into separate folders. You can clone repository to your local machine or directly check my preferences.
 
 ```bash
 git clone https://github.com/sagar-gavhane/dotfiles.git
 ```
-
-❌ No need to install `npm` or `yarn`
-
-## Authors
-
-- [Sagar Gavhane](https://github.com/sagar-gavhane)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
