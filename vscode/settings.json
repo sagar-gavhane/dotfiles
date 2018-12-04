@@ -1,13 +1,12 @@
 {
-  // editor config
-  "editor.fontSize": 18,
-  "editor.fontWeight": "normal",
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Menlo, DejaVu Sans Mono Book, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "Input Mono, IBM Plex Mono, Source Code Pro, Consolas, Menlo, DejaVu Sans Mono Book, Consolas, 'Courier New', monospace",
   "editor.cursorWidth": 3,
   "editor.tabSize": 2,
   "editor.lineHeight": 25,
   "editor.letterSpacing": 0.5,
+  "editor.fontWeight": "normal",
   // enable quick suggestions
   "editor.quickSuggestions": {
     "other": true,
@@ -34,9 +33,21 @@
   // files config
   "files.trimTrailingWhitespace": true,
   // window config
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   // workbench config
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
-  "typescript.experimental.syntaxFolding": false
+  "typescript.experimental.syntaxFolding": false,
+  "eslint.autoFixOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.fontSize": 16,
+  "markdown.preview.fontSize": 16,
+  "editor.minimap.enabled": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.showReleaseNotes": false,
+  "extensions.autoUpdate": false,
+  "material-icon-theme.showUpdateMessage": false,
+  "git.enableSmartCommit": true,
 }
