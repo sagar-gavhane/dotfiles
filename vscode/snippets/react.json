@@ -2,25 +2,25 @@
   "Class Component": {
     "prefix": "cc",
     "body": [
-      "class $1 extends Component {",
+      "class ${1:${TM_FILENAME_BASE}} extends Component {",
       "\tstate = { $2 }",
       "\trender() { ",
       "\t\treturn ( $0 );",
       "\t}",
       "}",
       " ",
-      "export default $1;"
+      "export default ${1:${TM_FILENAME_BASE}};"
     ],
     "description": "Class Component"
   },
   "Stateless Function Component": {
     "prefix": "sfc",
     "body": [
-      "const $1 = ($2) => {",
+      "const ${1:${TM_FILENAME_BASE}} = ($2) => {",
       "\treturn ( $0 );",
       "}",
       " ",
-      "export default $1;"
+      "export default ${1:${TM_FILENAME_BASE}};"
     ],
     "description": "Stateless Function Component"
   },
