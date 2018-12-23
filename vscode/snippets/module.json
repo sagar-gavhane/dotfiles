@@ -1,0 +1,40 @@
+{
+  "import named module": {
+    "prefix": "imd",
+    "body": "import { $0 } from '$1'"
+  },
+  "import default module": {
+    "prefix": "imp",
+    "body": "import ${2:moduleName} from '${1:module}'$0"
+  },
+  "export default moduleName": {
+    "prefix": "exm",
+    "body": ["export default $1$0"],
+    "description": "export default moduleName"
+  },
+  "export destructure": {
+    "prefix": "exd",
+    "body": ["export { $2 } from '${1:module}'$0"],
+    "description": "export destructure"
+  },
+  "import React": {
+    "prefix": "imr",
+    "body": ["import React from 'react'"]
+  },
+  "import React, { Component }": {
+    "prefix": "imrc",
+    "body": ["import React, { Component } from 'react'"]
+  },
+  "import React, { PureComponent }": {
+    "prefix": "imrpc",
+    "body": ["import React, { PureComponent } from 'react'"]
+  },
+  "import PropTypes": {
+    "prefix": "impt",
+    "body": ["import PropTypes from 'prop-types'"]
+  },
+  "import redux statement": {
+    "prefix": "imc",
+    "body": ["import { connect } from 'react-redux'"]
+  }
+}

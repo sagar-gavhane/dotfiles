@@ -1,0 +1,16 @@
+{
+  "arrow function": {
+    "prefix": "arfn",
+    "body": "() => {}"
+  },
+  "anonymous function": {
+    "prefix": "anfn",
+    "body": ["(${1:params}) => {", "  ${2}", "}"],
+    "description": "Creates an anonymous function in ES7 syntax"
+  },
+  "namedFunction": {
+    "prefix": "nfn",
+    "body": ["const ${1:name} = () => {", "  ${2}", "}"],
+    "description": "Creates a named function in ES7 syntax"
+  }
+}
