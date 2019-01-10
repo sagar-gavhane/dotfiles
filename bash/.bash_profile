@@ -1,25 +1,28 @@
 alias g='git'
 
-alias ga='git add'
+alias gi='git init'
 
+alias ga='git add'
 alias gaa='git add .'
 
-alias gam='git add . && git commmit -am '
+alias gc='git commit -m '
+
+alias gs='git status'
+
+alias gcb='git checkout -b '
+
+alias gl='git pull'
+alias glo='git pull origin'
+alias glom='git pull origin master'
+
+alias gp='git push'
+alias gpo='git push origin'
+alias gpom='git push origin master'
 
 alias gm="git merge"
 alias gmm="git merge master"
 
-alias gs='git status'
-
-alias gl='git pull'
-alias glom='git pull origin master'
-
-alias gc='git clone'
-
-alias gp='git push'
-alias gpom='git push origin master'
-
-alias ms='cd /home/lenovo/workspace/moneyspring-web-app'
+alias gb='git branch'
 
 function gcp() {
       git commit -am "$1" && git push
