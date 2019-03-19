@@ -1,7 +1,11 @@
 {
+  "log": {
+    "prefix": "log",
+    "body": "console.log($1)"
+  },
   "console.log": {
     "prefix": "clg",
-    "body": "console.log($0)"
+    "body": "console.log('$1', $1)"
   },
   "consoleTrace": {
     "prefix": "ctr",
@@ -22,5 +26,5 @@
     "prefix": "cwa",
     "body": "console.warn(${1:object})",
     "description": "Displays a message in the console but also displays a yellow warning icon along with the logged message"
-  }
+  },
 }
