@@ -1,48 +1,56 @@
 {
+  // WORKBENCH SETTINGS --------------------------------------------------------
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "json",
+  // GIT
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  // GITLENS.
+  "gitlens.gitExplorer.files.layout": "auto",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.keymap": "alternate",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  // FONT ----------------------------------------------------------------------
+  "editor.fontFamily": "IBM Plex Mono, Menlo, Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontSize": 16,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "Input Mono, IBM Plex Mono, Source Code Pro, Consolas, Menlo, DejaVu Sans Mono Book, Consolas, 'Courier New', monospace",
-  "editor.cursorWidth": 3,
-  "editor.tabSize": 2,
-  "editor.lineHeight": 25,
+  "terminal.integrated.fontFamily": "IBM Plex Mono, Menlo, Monaco, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.lineHeight": 23.2, // fontSize x 1.45
+  "editor.fontWeight": "500",
   "editor.letterSpacing": 0.5,
-  "editor.fontWeight": "normal",
-  // enable quick suggestions
+  // TAB
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  // AUTO FORMAT
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 1,
+  "editor.hover.delay": 300,
+  "editor.quickSuggestionsDelay": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.cursorWidth": 4,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.quickSuggestions": {
     "other": true,
-    "comments": false,
+    "comments": true,
     "strings": true
   },
-  // auto format
-  "editor.formatOnSave": false,
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "editor.smoothScrolling": true,
   "files.insertFinalNewline": true,
-  // triming
   "files.trimFinalNewlines": true,
   "editor.trimAutoWhitespace": true,
-  // emmet configs
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-  // files config
   "files.trimTrailingWhitespace": true,
-  // window config
-  "window.zoomLevel": 0,
-  // workbench config
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "newUntitledFile",
   "typescript.experimental.syntaxFolding": false,
   "eslint.autoFixOnSave": true,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "terminal.integrated.fontSize": 16,
-  "markdown.preview.fontSize": 16,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "update.enableWindowsBackgroundUpdates": false,
@@ -50,4 +58,21 @@
   "extensions.autoUpdate": false,
   "material-icon-theme.showUpdateMessage": false,
   "git.enableSmartCommit": true,
+  "editor.rulers": [80, 120],
+  "debug.console.fontFamily": "auto",
+  "editor.codeLens": false,
+  "workbench.editor.enablePreview": false,
+  "editor.snippetSuggestions": "top",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.statusBar.feedback.visible": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "macros": {
+    "collapseAndClose": [
+      "workbench.files.action.collapseExplorerFolders",
+      "workbench.action.closeAllEditors"
+    ]
+  },
+  "markdown.extension.syntax.decorations": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Night Owl No Italics"
 }
