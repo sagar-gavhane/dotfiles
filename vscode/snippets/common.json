@@ -1,7 +1,0 @@
-{
-  "promise": {
-    "prefix": "prom",
-    "body": ["return new Promise((resolve, reject) => {", "  ${1}", "})"],
-    "description": "Creates and returns a new Promise in the standard ES7 syntax"
-  }
-}

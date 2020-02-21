@@ -1,7 +1,0 @@
-{
-  "graphql resolvers": {
-    "prefix": "resolvers-func",
-    "body": ["${1:resolverName}(parent, args, ctx, info) {$2}"],
-    "description": "graphql resolvers"
-  }
-}

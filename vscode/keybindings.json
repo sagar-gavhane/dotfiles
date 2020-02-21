@@ -1,0 +1,48 @@
+[
+  // change case
+  {
+    "key": "ctrl+c ctrl+c",
+    "command": "extension.changeCase.camel",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+c ctrl+a",
+    "command": "extension.changeCase.constant"
+  },
+  {
+    "key": "ctrl+c ctrl+d",
+    "command": "extension.changeCase.dot"
+  },
+  {
+    "key": "ctrl+c ctrl+k",
+    "command": "extension.changeCase.kebab"
+  },
+  {
+    "key": "ctrl+c ctrl+s",
+    "command": "extension.changeCase.snake"
+  },
+  {
+    "key": "ctrl+c ctrl+l",
+    "command": "extension.changeCase.lower",
+  },
+  {
+    "key": "ctrl+c ctrl+u",
+    "command": "extension.changeCase.upper",
+  },
+  {
+    "key": "ctrl+c ctrl+p",
+    "command": "extension.changeCase.pascal"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "cmd+up",
+    "command": "expand_region"
+  },
+  {
+    "key": "cmd+down",
+    "command": "undo_expand_region"
+  },
+]
