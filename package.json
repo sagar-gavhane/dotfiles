@@ -1,0 +1,33 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "My preferences may help you. This settings/configuration I'm using in my daily workflow. It makes me more productive. I hope you'll some good out of it.",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --config ./.prettierrc \"**/*.+(js|jsx|ts|tsx|json|css|scss|md|html|yaml)\"",
+    "format": "npm run prettier -- --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagar-gavhane/dotfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagar-gavhane/dotfiles/issues"
+  },
+  "homepage": "https://github.com/sagar-gavhane/dotfiles#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "dependencies": {
+    "husky": "^4.2.3"
+  }
+}
