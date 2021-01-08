@@ -1,0 +1,66 @@
+[user]
+	name = Sagar Gavhane
+	email = sagar.gavhane04@gmail.com
+[core]
+  pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+[interactive]
+  diffFilter = delta --color-only
+[alias]
+	co = checkout
+	cob = checkout -b
+	cod = checkout develop
+	com = checkout master
+	br = branch
+	st = status
+	cm = commit -m
+	cam = commit -a -m
+	pso = push origin
+	psod = push origin develop
+	psom = push origin master
+	plo = pull origin
+	plod = pull origin develop
+	plom = pull origin master
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --graph --topo-order --abbrev-commit --date=short --decorate --all --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset'
+	log-graph = log --graph --all  --decorate --oneline
+	log-my-week = !git log --author $(git config user.email) --since "1 week ago"
+	dd = diff --check --dirstat --find-copies --find-renames --histogram --color
+	uncommit = reset --soft HEAD~1
+	get = !git fetch --prune && git pull --rebase=preserve && git submodule update --init --recursive
+	put = !git commit --all && git push
+	cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+	# Delete all local branches but master and the current one, only if they are fully merged with master
+	delete-useless = !git branch | grep -v "master" | xargs git branch -D
+	# emoji-log
+	# Git Commit, Add all and Push — in one step.
+  cap = "!f() { git commit -m \"$@\"; }; f"
+  # NEW.
+  new = "!f() { git cap \"📦 NEW($1): $2\"; }; f"
+  # IMPROVE.
+  imp = "!f() { git cap \"👌 IMPROVE($1): $2\"; }; f"
+	# UPDATE.
+  up = "!f() { git cap \"✍🏻 UPDATE($1): $2\"; }; f"
+  # FIX.
+  fix = "!f() { git cap \"🐞 FIX($1): $2\"; }; f"
+  # RELEASE.
+  rlz = "!f() { git cap \"🚀 RELEASE($1): $2\"; }; f"
+  # DOC.
+  doc = "!f() { git cap \"📖 DOC($1): $2\"; }; f"
+  # TEST.
+  tst = "!f() { git cap \"🤖 TEST($1): $2\"; }; f"
+  # BREAKING CHANGE.
+  brk = "!f() { git cap \"‼️ BREAKING CHANGES($1): $2\"; }; f"
+	# REMOVE
+	remove = "!f() { git cap \"🗑 REMOVE($1): $2\"; }; f"
+	# REFACTOR
+	ref = "!f() { git cap \"♻️ REFACTOR($1): $2\"; }; f"
+	# INITIAL COMMIT
+	int = "!f() { git cap \"🎉 INITIAL COMMIT($1): $2\"; }; f"
+[core]
+	excludesfile = /Users/sagar/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Users/sagar/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
