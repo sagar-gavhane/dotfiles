@@ -1,5 +1,4 @@
 [
-  // change case
   {
     "key": "ctrl+c ctrl+c",
     "command": "extension.changeCase.camel",
@@ -23,11 +22,11 @@
   },
   {
     "key": "ctrl+c ctrl+l",
-    "command": "extension.changeCase.lower",
+    "command": "extension.changeCase.lower"
   },
   {
     "key": "ctrl+c ctrl+u",
-    "command": "extension.changeCase.upper",
+    "command": "extension.changeCase.upper"
   },
   {
     "key": "ctrl+c ctrl+p",
@@ -45,4 +44,8 @@
     "key": "cmd+down",
     "command": "undo_expand_region"
   },
+  {
+    "key": "shift+cmd+c",
+    "command": "copyRelativeFilePath"
+  }
 ]
